@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-duplicate-enum-values */
 const enum SizeMap {
 	BYTE = 1,
 	SHORT = 2,
