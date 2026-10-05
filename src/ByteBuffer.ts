@@ -1,20 +1,20 @@
-const enum SizeMap {
-	BYTE = 1,
-	SHORT = 2,
-	INT = 4,
-	LONG = 8,
-	FLOAT = 4,
-	DOUBLE = 8,
-}
+const SizeMap = {
+	BYTE: 1,
+	SHORT: 2,
+	INT: 4,
+	LONG: 8,
+	FLOAT: 4,
+	DOUBLE: 8,
+};
 
 /**
  * Java style ByteBuffer implementation in TypeScript
  */
 export class ByteBuffer {
 	private _buffer: Buffer;
-	private _position: number = 0;
+	private _position = 0;
 
-	constructor(size: number) {
+	public constructor(size: number) {
 		this._buffer = Buffer.alloc(size);
 	}
 
